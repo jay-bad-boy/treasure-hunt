@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet"> <!-- Add this line -->
+    <title>Treasure Hunt Game</title>
+</head>
+<body>
+    <h1>Treasure Hunt Game</h1>
+    <div id="scoreBoard" style="    font-family: 'Bubblegum Sans', cursive; /* Apply bubble font */
+; font-size:30px;">Score: 250</div>
+    <div id="hintBox" style="color: blue; font-weight: bold;font-family: 'Bubblegum Sans', cursive; /* Apply bubble font */
+;"></div>
+    <button id="hintButton" style="    font-family: 'Bubblegum Sans', cursive; /* Apply bubble font */
+; background-color:pink;">Get Hint</button>
+    <button id="howToPlayButton" style="    font-family: 'Bubblegum Sans', cursive; /* Apply bubble font */
+; background-color:pink;">How to Play</button>
+    <div id="gameBoard"></div>
+    <div id="message"></div>
+    <button id="restartBtn" onclick="initGame()">Restart Game</button>
+    <script src="script.js"></script>
+    <script>
+    document.getElementById('howToPlayButton').addEventListener('click', function() {
+        window.location.href = 'howtoplay.html'; // Navigate to the how-to-play page
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('https://i.postimg.cc/N07hqFZS/background.jpg'); /* Add background image */
+    background-size: cover;  /* Make sure the image covers the entire background */
+    background-position: center;  /* Center the background image */
+    background-repeat: no-repeat;  /* Prevent the background from repeating */
+    margin: 0;  /* Remove margins */
+    padding: 0;
+}
+h1 {
+    font-family: 'Bubblegum Sans', cursive; /* Apply bubble font */
+    font-size: 50px; /* Adjust font size as needed */
+    text-align: center; /* Center the text */
+    color: darkblue; /* Change color to your preference */
+}
+
+h2 {
+    font-family: 'Bubblegum Sans', cursive; /* Apply bubble font */
+    font-size: 20px; /* Adjust font size as needed */
+    text-align: center; /* Center the text */
+    color: darkblue; /* Change color to your preference */
+}
+
+
+/* Add other styles as needed */
+
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+    background-color: #4e342e;  /* Dark brown color for grid tiles */
+    border: 2px solid #aaa;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: black;  /* Change number color to black */
+    font-weight: bold;
+    text-decoration: dotted;
+}
+
+.tile.treasure {
+    background-color: gold;
+}
+
+.tile.trap {
+    background-color: red;
+}
+
+#message {
+    font-size:30px;
+    margin: 10px 0;
+    font-family: 'Bubblegum Sans', cursive; /* Apply bubble font */
+
+}
+
+#restartBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Bubblegum Sans', cursive; /* Apply bubble font */
+background-color:pink;
+
+}
+.instructions {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: left;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.instructions ol {
+    line-height: 1.6;
+}
+
+.instructions button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: lightblue;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
